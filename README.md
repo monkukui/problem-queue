@@ -30,3 +30,6 @@ Difficulty を取得できる
 ## rails を JSON API として運用する際に，参考になりそうなサイト
 https://qiita.com/k-penguin-sato/items/adba7a1a1ecc3582a9c9
 http://hacktomo.hatenablog.com/entry/2017/12/14/012423
+
+認証付きで一番良さそう
+https://qiita.com/ochiochi/items/966b884eb17045dfb929
