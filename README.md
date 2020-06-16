@@ -17,3 +17,6 @@ Problem {
 ## 必要な API
 /problems?user=monkukui
 で，Problem  の配列を返す1
+
+## rails を JSON API として運用する際に，参考になりそうなサイト
+https://qiita.com/k-penguin-sato/items/adba7a1a1ecc3582a9c9
