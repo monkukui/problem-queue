@@ -33,3 +33,6 @@ http://hacktomo.hatenablog.com/entry/2017/12/14/012423
 
 認証付きで一番良さそう
 https://qiita.com/ochiochi/items/966b884eb17045dfb929
+
+こっちはハッシュ化されて保存されそう
+https://dev.m6a.jp/entry/2018/11/14/162259
