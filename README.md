@@ -70,3 +70,6 @@ https://qiita.com/ochiochi/items/966b884eb17045dfb929
 
 こっちはハッシュ化されて保存されそう
 https://dev.m6a.jp/entry/2018/11/14/162259
+
+これは user ごとにアイテムが作れそう（最有力）
+https://qiita.com/kaishuu0123/items/27ba55e774ac1b7a94fc
