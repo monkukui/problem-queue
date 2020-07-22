@@ -47,12 +47,12 @@ ProblemQueue {
 
 - `/problems` ログインしている人の問題一覧を取得
 
-- `pop/<id>` 
+- `/pop/<id>` 
     - `ProblemQueue` の `id` を指定して，`DELETE` する
     - フロントエンドでは，表示されている問題から選択できるようにする
     - バックエンドでは，本当に問題があるかチェックして，あったら決して `true` を返す．なかったら `false` を返す
 
-- `push/<contest_id>/<problem_id>
+- `/push/<contest_id>/<problem_id>`
     - 問題を追加する
     - フロントエンドでは，AtCoder Problems の `https://kenkoooo.com/atcoder/resources/problems.json` を叩いて一覧取得し，AtCoder Problems のバチャ画面のような検索機能を実装
     - バックエンドでも同様の api を叩いて，本当に問題が存在するかチェック
