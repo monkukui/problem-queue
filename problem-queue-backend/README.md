@@ -1,4 +1,13 @@
-# README
+# 立ち上げ方法
+DB 作成
+```
+rails db:migrate
+```
+
+サーバー立ち上げ
+```
+rails server
+```
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
