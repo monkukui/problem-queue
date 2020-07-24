@@ -4,6 +4,7 @@ module V1
       desc 'returns all problems'
       get '/' do
         @problems = Problem.all
+        present @problems, with: V1::Entities::ProblemEntity
       end
 
       desc 'returns a problem'
@@ -12,6 +13,7 @@ module V1
       end
       get '/:id' do
         @problem = Problem.find(params[:id])
+        present @problem, with: V1::Entities::ProblemEntity
       end
 
       desc 'Create a problem'
@@ -23,13 +25,21 @@ module V1
         requires :user_id, type: Integer
       end
       post '/' do
-        @problem = Problem.create(
+        @problem = Problem.new(
           memo: params[:memo],
           priority: params[:priority],
           contest_str: params[:contest_str],
           problem_str: params[:problem_str],
           user_id: params[:user_id]
         )
+
+        if @problem.save
+          status 201
+          present @problem, with: V1::Entities::ProblemEntity
+        else
+          status 400
+          present @problem.errors
+        end
       end
     end
   end
