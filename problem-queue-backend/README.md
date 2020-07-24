@@ -1,4 +1,7 @@
-# 立ち上げ方法
+## 概要
+Ruby On Rails の api モードです
+
+## 立ち上げ方法
 DB 作成
 ```
 rails db:migrate
