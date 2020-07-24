@@ -42,3 +42,26 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+
+# 日本語（by monkukui）
+
+## 概要
+problem-queue のフロントエンドディレクトリ
+
+- React + TypeScript
+- `yarn create react-app problem-queue-frontend --template typescript` で立ち上げた
+    - 参考：https://qiita.com/pure-adachi/items/a9a39b3ffcb5af4c5b59
+
+## 開発の流れ
+```
+❯ cd problem-queue-frontend
+❯ yarn start
+```
+をした後，http://localhost:3000/ にアクセス
+
+
+
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
