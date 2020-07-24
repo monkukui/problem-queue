@@ -21,14 +21,12 @@ User {
 
 ```
 ProblemQueue {
-  id: int
+  id: int（自動生成）
   user_id: int
   contest_id: string
   problem_id: string
-  priority: int（優先度）
   memo: string（めも）
-  time: string?（タイムスタンプ）
-  color: string（"012,112,255" みたいな（アイテムの色を選択できると楽しいかも））
+  time: string?（タイムスタンプ）（自動生成）
 }
 ```
 問題の url は
