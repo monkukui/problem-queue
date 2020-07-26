@@ -3,8 +3,7 @@ class CreateProblems < ActiveRecord::Migration[5.2]
     create_table :problems do |t|
       t.string :memo, null: false
       t.integer :priority, null: false
-      t.string :contest_str, null: false
-      t.string :problem_str, null: false
+      t.string :problem_str
       t.references :user, foreign_key: true
 
       t.timestamps

@@ -20,19 +20,16 @@ module V1
       params do
         requires :memo, type: String
         requires :priority, type: Integer
-        requires :contest_str, type: String
         requires :problem_str, type: String
         requires :user_id, type: Integer
       end
       post '/' do
         @problem = Problem.new(
-          memo: params[:memo],
-          priority: params[:priority],
-          contest_str: params[:contest_str],
+          title: params[:title],
+          price: params[:price],
           problem_str: params[:problem_str],
           user_id: params[:user_id]
         )
-
         if @problem.save
           status 201
           present @problem, with: V1::Entities::ProblemEntity

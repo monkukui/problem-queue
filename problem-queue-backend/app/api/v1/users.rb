@@ -1,9 +1,10 @@
 module V1
   class Users < Grape::API
     resources :users do
+      # FIXME これいらないかも
       desc 'returns all users'
       get '/' do
-        @users = User.all # 最後に評価された値がレスポンスとして返される
+        @users = User.all
         present @users, with: V1::Entities::UserEntity # @users を V1::Entities::UserEntityを使用して返却する
       end
 
@@ -16,36 +17,33 @@ module V1
         present @user, with: V1::Entities::UserEntity
       end
 
-      desc 'Create an user'
+      desc 'signin'
       params do
-        requires :name, type: String
+        requires :email, type: String
+        requires :password, type: String
       end
-      post '/' do
-        @user = User.new(name: params[:name])
-        # 作成の成否によってレスポンスを分ける
-        if @author.save
-          status 201
-          present @user, with: V1::Entities::UserEntity
+      post '/signin' do
+        @user = User.find_by(email: params[:email])
+        if @user.authenticate(params[:password])
+          @user
         else
-          status 400
-          present @user.errors.full_messages
+          error!('Unauthorized. Invalid email or password.', 401)
         end
       end
 
-      desc 'Delete an user'
+      desc 'signup'
       params do
-        requires :id, type: Integer
+        requires :email, type: String
+        requires :password, type: String
+        requires :name, type: String
       end
-      delete '/:id' do
-        @user = User.find(params[:id])
+      post '/signup' do
+        @user = User.new(declared(params))
 
-        # 削除の成否によってレスポンスを分ける
-        if @user.destroy
-          status 204
-          present nil
+        if @user.save
+          @user
         else
-          status 400
-          present @user.errors.full_messages
+          @user.errors.full_messages
         end
       end
     end

@@ -4,7 +4,6 @@ module V1
       expose :id
       expose :memo
       expose :priority
-      expose :contest_str
       expose :problem_str
       expose :user, using: V1::Entities::UserEntity
     end
