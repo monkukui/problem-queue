@@ -21,15 +21,18 @@ module V1
         requires :memo, type: String
         requires :priority, type: Integer
         requires :problem_str, type: String
-        requires :user_id, type: Integer
       end
       post '/' do
+        
+        authenticate!
+        puts current_user.id
         @problem = Problem.new(
-          title: params[:title],
-          price: params[:price],
+          memo: params[:memo],
+          priority: params[:priority],
           problem_str: params[:problem_str],
-          user_id: params[:user_id]
+          user_id: current_user.id
         )
+        puts @problem
         if @problem.save
           status 201
           present @problem, with: V1::Entities::ProblemEntity
