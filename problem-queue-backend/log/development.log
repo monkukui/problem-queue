@@ -1445,3 +1445,5 @@ Started POST "/v1/problems" for ::1 at 2020-07-26 23:53:40 +0900
   ↳ app/api/v1/problems.rb:36
   [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
   ↳ app/api/v1/problems.rb:36
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mProblem Load (1.2ms)[0m  [1m[34mSELECT  "problems".* FROM "problems" WHERE "problems"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
