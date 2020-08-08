@@ -33,6 +33,23 @@ rails サーバー起動
 rails server
 ```
 
+api を叩いてみる
+```
+http://localhost:3000/v1/problems
+```
+
+```
+[
+  {"id":1,"memo":"後で解く","priority":1,"problem_str":"abc172_a","user":{"id":1,"name":"monkukui"}},
+  {"id":2,"memo":"b 問題は難しい \u003e\u003c","priority":1,"problem_str":"abc172_b","user":{"id":1,"name":"monkukui"}},
+  {"id":3,"memo":"復習したい問題","priority":1,"problem_str":"abc132_a","user":{"id":2,"name":"tab"}},
+  {"id":4,"memo":"e 問題もお手の物","priority":1,"problem_str":"abc132_e","user":{"id":2,"name":"tab"}},
+  {"id":5,"memo":"水嶋ヒロ","priority":3,"problem_str":"abc100_f","user":{"id":3,"name":"rsk0315"}},
+  {"id":6,"memo":"f にゃー","priority":3,"problem_str":"abc101_f","user":{"id":3,"name":"rsk0315"}},
+  {"id":7,"memo":"やってられん","priority":5,"problem_str":"abc181_f","user":{"id":3,"name":"rsk0315"}},
+  {"id":8,"memo":"やってられん（こちらが正しい）","priority":5,"problem_str":"abc181_f","user":{"id":1,"name":"monkukui"}}
+]
+```
 
 
 This README would normally document whatever steps are necessary to get the
