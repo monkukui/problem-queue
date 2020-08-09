@@ -3,3 +3,4 @@ module Types
     field :create_problem, mutation: Mutations::CreateProblem
   end
 end
+
