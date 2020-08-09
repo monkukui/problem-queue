@@ -78,5 +78,13 @@ https://qiita.com/mktakuya/items/d729ecd64c2bd8cea6e8
 
 
 ## graphql を 導入する時に参考にしたサイト
+
+### バックエンドを GraphQL につなぐ
 - https://graphql-ruby.org/guides 公式
 - https://qiita.com/dkawabata/items/4fd965ee6d7295386a8b qiita
+（完成！）
+
+### フロントエンドを GraphQL につなぐ
+- https://www.s-arcana.co.jp/blog/2020/02/20/4364 ブログ
+
+（未完成... org）
