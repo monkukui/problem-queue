@@ -75,3 +75,8 @@ https://qiita.com/kaishuu0123/items/27ba55e774ac1b7a94fc
 追記：7/24 最有力
 https://qiita.com/mktakuya/items/117f1563c2b7e8a6e69c
 https://qiita.com/mktakuya/items/d729ecd64c2bd8cea6e8
+
+
+## graphql を 導入する時に参考にしたサイト
+- https://graphql-ruby.org/guides 公式
+- https://qiita.com/dkawabata/items/4fd965ee6d7295386a8b qiita
