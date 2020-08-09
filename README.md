@@ -86,5 +86,6 @@ https://qiita.com/mktakuya/items/d729ecd64c2bd8cea6e8
 
 ### フロントエンドを GraphQL につなぐ
 - https://www.s-arcana.co.jp/blog/2020/02/20/4364 ブログ
+- https://qiita.com/Climber22/items/4269ad07350aae257328 これ良さそう
 
 （未完成... org）
